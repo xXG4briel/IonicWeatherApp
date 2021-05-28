@@ -8,7 +8,7 @@
   <img src="https://i.imgur.com/DdE2yes.jpg" width="250">
 <div>
 
-<a href="https://www.instagram.com/p/CNkZEiXA4jG/">Designer das telas</a>
+<a href="https://www.instagram.com/p/CNkZEiXA4jG/">Instagram do Designer das interfaces</a>
 
 ## Como usar ?
 
