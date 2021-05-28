@@ -1,27 +1,86 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-header {
+    ion-toolbar {
+        ion-button {
+            --box-shadow: none;
+            ion-icon {
+                color: white;
+            }
+            // box-shadow: 0 0 1em var(--ion-color-secondary);
+        }
+        ion-title {
+            color: white;
+        }
+    }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-content {
+    .botoes{
+        --min-height: 79px;
+        ion-button {
+            --box-shadow: none;
+            --background: var(--ion-color-secondary);
+            --background-activated: #575757;
+            width: 30vw;
+            ion-label {
+                color: white;
+            }
+        }
+    }
+    .container {
+        border-radius: 1.6rem 1.6rem 0 0 ;
+        width: 100vw;
+        height: calc(100% - 79px);
+        min-height: 560px;
+        // background: var(--ion-color-primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        ion-grid {
+            width: 100%;
+            padding: 0 10px 0 25px;
+            .temperatura {
+                margin-bottom: 40px;
+            }
+            .previsao-lugar {
+                padding: 20px 0;
+                ion-label {
+                    color: #6c6c6c;
+                }
+            }
+            .previsao-lugar ion-label span, .previsao-lugar ion-label ion-icon{
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .previsao-info {
+                strong {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+                .previsao-porcent {
+                    margin-left: auto;
+                    text-align: start;
+                    width: 30vw;
+                }
+            }
+            .temperatura-info {
+                .temperatura-tempo {
+                    font-size: 72px;
+                    .temperatura-previsao {
+                        font-size: initial;
+                    }
+                }
+            }
+            .temperatura-img {
+                img {
+                    width: 72px;
+                }
+            }
+        }
+        .img { 
+            height: fit-content;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    }
 }
